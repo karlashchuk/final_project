@@ -3,73 +3,81 @@
  <head>
     <meta charset="utf-8">
     <title>karlashchuk</title>
-    <link type="text/css" rel="stylesheet" href="karlashchuk.css" />
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
  </head>
     
  <body>
-    <aside>
-        <header>
+    <div class="base-container">
+        <header class="header">
         </header>
         
-        <div id="avatar">
-            <img src="images/avatar.jpeg" alt="My photo">
+        <aside class="aside">
+            <img src="images/ava.jpeg" alt="My photo" id="avatar">
+            
+            <div class="social-icons">
+                <a href="https://www.facebook.com/vadym.karlashchuk" title="My Facebook-page" target="_blank" id="facebook-icon">
+                    <img src="icons/facebook-icon.png" alt="My Facebook-page">
+                </a>
+                <a href="https://github.com/karlashchuk" title="My Profile on GitHub" target="_blank" id="github-icon">
+                    <img src="icons/github-icon.png" alt="My GitHub-account">
+                </a>
+            </div>
+        </aside>
+        
+        <div class="main">
+            <ul class="tabs">
+                <li>
+                    <input type="radio" name="tab" id="tab-home" checked>
+                    <label for="tab-home">Home</label>
+                    <section id="tab-content_home" class="tab-content">
+                        <h1>Hello!</h1>
+                        <div class="animated flipInY">
+                            <h3>My name's Vadym</h3>
+                            <p>
+                                <span>I'm <strong>front-end</strong> web-developer</span>, and ...<br>
+                                ... if you are interested in services on this <em>field</em>,<br>
+                                you cold have a look around on this website ... )
+                            </p>
+                        </div>
+                    </section>
+                </li>
+                
+                <li>
+                    <input type="radio" name="tab" id="tab-profile">
+                    <label for="tab-profile">Profile</label>
+                    <section id="tab-content_profile" class="tab-content">
+                        <div class="animated flipInY">
+                            <h3>My skills</h3>
+                        </div>
+                    </section>
+                </li>
+                
+                <li>
+                    <input type="radio" name="tab" id="tab-portfolio">
+                    <label for="tab-portfolio">Portfolio</label>
+                    <section id="tab-content_portfolio" class="tab-content">
+                        <div class="animated flipInY">
+                            <h3>My portfolio</h3>
+                        </div>
+                    </section>
+                </li>
+                
+                <li>
+                    <input type="radio" name="tab" id="tab-contact">
+                    <label for="tab-contact">Contact</label>
+                    <section id="tab-content_contact" class="tab-content">
+                        <div class="animated flipInY">
+                            <h3>Contact</h3>
+                        </div>    
+                    </section>
+                </li>
+            </ul>
         </div>
-    </aside>
         
-    <div class="main">
-        <header>
-            <nav>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="active" role="presentation">
-                        <a href="#home" role="tab" data-toggle="tab">
-                            <img src="images/home.png" alt="Home">
-                            Home
-                        </a>
-                    </li>
-                        
-                    <li role="presentation">
-                        <a href="#profile" role="tab" data-toggle="tab">
-                            <img src="images/profile.png" alt="Profile">
-                            Profile
-                        </a>
-                    </li>
-                        
-                    <li role="presentation">
-                        <a href="#portfolio" role="tab" data-toggle="tab">
-                            <img src="images/portfolio.png" alt="Portfolio">
-                            Portfolio
-                        </a>
-                    </li>
-                        
-                    <li role="presentation">
-                        <a href="#contact" role="tab" data-toggle="tab">
-                            <img src="images/contact.png" alt="Contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        
-        <section id="home">
-            <h1>Hello!</h1>
-        </section>
-            
-        <section id="profile">
-            <h3>My skills</h3>
-        </section>
-            
-        <section id="portfolio">
-            <h3>My portfolio</h3>
-        </section>
-            
-        <section id="contact">
-            <h3>Contact</h3>
-        </section>
-    </div>   
-        
-    <footer>
-        2016, made by Vadym Karlashchuk
-    </footer>
+        <footer class="footer">
+            2016, made by Vadym Karlashchuk
+        </footer>
+    </div>
  </body>
 </html>
