@@ -142,10 +142,14 @@ media queries
 }
 
 @media all and (max-width: 719px) {
-    .aside { min-width: 719px;}
+    .aside { max-width: 719px; }
+    .social-icons { text-align: right; }
+    
+    #avatar { left: 45px; }
     #facebook-icon, #github-icon {
         display: block;
         position: relative;
         top: -160px;
+        right: 45px;
     }
 }
