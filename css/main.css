@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Stalinist+One&subset=latin,cyrillic);
 
+/*============================================================
+        general
+============================================================*/
 body {
     background: url(../images/surf.jpg) top no-repeat;
 }
@@ -69,7 +72,7 @@ a {
 }
 
 /*============================================================
-tabs with content...
+        tabs with content...
 ============================================================*/
 .tabs {
     list-style: none;
@@ -132,7 +135,7 @@ tabs with content...
 }
 
 /*============================================================
-media queries
+        media queries
 ============================================================*/
 @media all and (min-width: 720px) {
     .main   { flex: 3 0px; }
@@ -152,4 +155,47 @@ media queries
         top: -160px;
         right: 45px;
     }
+}
+
+/*============================================================
+        contact
+============================================================*/
+#tab-content_contact {
+    font-size: 13px;
+    text-align: left;
+}
+
+.contact {
+    width: 55%;
+    margin: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    width: 75%;
+    font-family: 'Ubuntu Mono';
+    color: #cccccc;
+	margin: 10px;
+	padding: 5px;
+	background: rgba(215,206,202, 0.2);
+	border: none;
+}
+
+.contact-form input[type="submit"] {
+    width: 65px;
+    height: 25px;
+    font-family: 'Stalinist One', cursive;
+    font-size: 12px;
+    background-color: #996666;
+    color: #333333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    color: #cccccc;
+}
+
+.contact-form textarea {
+    height: 100px;
 }

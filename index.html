@@ -67,9 +67,21 @@
                     <input type="radio" name="tab" id="tab-contact">
                     <label for="tab-contact">Contact</label>
                     <section id="tab-content_contact" class="tab-content">
-                        <div class="animated flipInY">
+                        <div class="contact animated flipInY">
                             <h3>Contact</h3>
-                        </div>    
+                            <p>If you have any questions for me, you can use the form to send me a message.</p>
+                            
+                            <form class="contact-form" action="#" method="post">
+                                    <input type="text" name="name" placeholder="Name..." required>
+                                    <input type="email" name="email" placeholder="Email..." required>
+                                    <textarea name="message" placeholder="Your message..." required></textarea>
+                                
+                                <input type="submit" name="submit" value="Send">
+                            </form>
+                        </div>
+                        
+                        <div class="contact-info">
+                        </div>
                     </section>
                 </li>
             </ul>
