@@ -8,6 +8,10 @@ body {
     background: url(../images/surf.jpg) top no-repeat;
 }
 
+h1, h3 {
+    color: #999;
+}
+
 a {
     text-decoration: none;
 }
@@ -56,6 +60,7 @@ a {
 }
 
 .footer {
+    position: relative;
     font-family: 'Ubuntu Mono';
     border: 3px solid #333333;
     background-color: #666699;
@@ -157,17 +162,22 @@ a {
     }
 }
 
+@media all and (max-width: 434px) {
+    .tabs label { right: 10px; font-size: 14px; }
+    .contact    { position: relative; top: -10px; }
+}
+
 /*============================================================
         contact
 ============================================================*/
 #tab-content_contact {
-    font-size: 13px;
+    font-size: 12px;
     text-align: left;
 }
 
 .contact {
-    width: 55%;
-    margin: 15px;
+    width: 50%;
+    margin: 10px;
 }
 
 .contact-form input, .contact-form textarea {
